@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="imgs/cloud.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <div class="wrapped">
+        <div class="overlay"></div>
+        <div class="search">
+          <input type="text" placeholder="ادخل اسم المدينة مثل : المنصورة" />
+          <div class="img-icon">
+            <img src="imgs/search.png" alt="search icon" />
+          </div>
+        </div>
+        <div class="error">
+          <p>ادخل اسم المدينة بطريقة صحيحة</p>
+        </div>
+        <div class="weather">
+          <div class="content">
+            <img alt="" class="weather-icon" />
+            <h1 class="temp" dir="ltr"></h1>
+            <h2 class="city"></h2>
+          </div>
+          <div class="details">
+            <div class="col">
+              <div class="humidity">
+                <p>الرطوبة</p>
+                <p class="humidity-degree" dir="rtl"></p>
+              </div>
+              <img src="imgs/humidity.png" alt="" />
+            </div>
+            <div class="col">
+              <div class="wind">
+                <p>سرعة الرياح</p>
+                <p class="wind-degree" dir="rtl"></p>
+              </div>
+              <img src="imgs/wind.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
